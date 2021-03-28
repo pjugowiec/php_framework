@@ -1,0 +1,39 @@
+getAllProjects:
+    path: /api/project
+    controller: App\Controller\ProjectController::getAllProjects
+    methods: [GET]
+
+createProject:
+    path: /api/project
+    controller: App\Controller\ProjectController::createProject
+    methods: [POST]
+
+updateProject:
+    path: /api/project/{id}
+    controller: App\Controller\ProjectController::updateProject
+    methods: [ PUT ]
+
+deleteProject:
+    path: /api/project/{id}
+    controller: App\Controller\ProjectController::deleteProject
+    methods: [ DELETE ]
+
+getAllLocalizations:
+    path: /api/localization
+    controller: App\Controller\LocalizationController::getAllLocalizations
+    methods: [GET]
+
+createLocalization:
+    path: /api/localization
+    controller: App\Controller\LocalizationController::createLocalization
+    methods: [POST]
+
+deleteLocalization:
+    path: /api/localization/{id}
+    controller: App\Controller\LocalizationController::deleteLocalization
+    methods: [ DELETE ]
+
+updateLocalization:
+    path: /api/localization/{id}
+    controller: App\Controller\LocalizationController::updateLocalization
+    methods: [ PUT ]

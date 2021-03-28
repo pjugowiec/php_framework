@@ -40,12 +40,10 @@ class LocalizationController extends ApiController
             return $this->respondValidationError('Please provide a valid request!');
         }
 
-        // validate the title
         if (! $request->get('city')) {
-            return $this->respondValidationError('Please provide a title!');
+            return $this->respondValidationError('Please provide a city!');
         }
 
-        // persist the new movie
         $localization = new Localization();
         $localization->setCity($request->get('city'));
         $localization->setDistrict($request->get('district'));

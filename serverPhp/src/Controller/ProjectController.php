@@ -34,7 +34,7 @@ class ProjectController extends ApiController
         }
 
         if (! $request->get('name')) {
-            return $this->respondValidationError('Please provide a title!');
+            return $this->respondValidationError('Please provide a name!');
         }
 
         $project = new Project();
